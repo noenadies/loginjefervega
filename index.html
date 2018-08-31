@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<style type="text/css">
+		
+
+	.BUTTON_IHV {
+   background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 40px;
+   font-weight: 100;
+   padding: 40px;
+   box-shadow: 1px 1px 20px 0px #000000;
+   -webkit-box-shadow: 1px 1px 20px 0px #000000;
+   -moz-box-shadow: 1px 1px 20px 0px #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+.BUTTON_IHV:hover {
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+   text-decoration: none;
+}
+	</style>
+	<title>Login V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+
+</script>
+
+	<div id="idregistro">
+	
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Bienvenido
+					</span>
+					<span class="login100-form-title p-b-48"><img style="margin-top: 3px;height: 100px;" src="logo.png">
+						
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="ok" id="idnombre" class="input100" type="text" name="nombre">
+						<span class="focus-input100" data-placeholder="Nombre"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="o22" id="idcedula" class="input100" type="number" name="cedula">
+						<span class="focus-input100" data-placeholder="Cedula"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="11ok" id="idmovil" class="input100" type="number" name="movil">
+						<span class="focus-input100" data-placeholder="Movil"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="eeok" id="idemail" class="input100" type="text" name="email">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input id="iddepartamento" class="input100" type="text" name="departamento" value="BOGOTA D.C.">
+						<span class="focus-input100" data-placeholder=""></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input id="idmunicipio" class="input100" type="text" name="municipiol" value="BOGOTA D.C.">
+						<span class="focus-input100" data-placeholder=""></span>
+					</div>
+
+
+					<div value="08" class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input id="idlocalidad" class="input100" type="number" name="localidad">
+						<span class="focus-input100" data-placeholder="Localidad"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="codok" id="idcodigo" class="input100" type="text" name="localidad">
+						<span class="focus-input100" data-placeholder="Codigo localidad"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="odirk" id="ididireccion" class="input100" type="text" name="direccion">
+						<span class="focus-input100" data-placeholder="Lugar votacion"></span>
+					</div>
+
+						<div  class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input value="1" id="idmesa" class="input100" type="number" name="mesa">
+						<span class="focus-input100" data-placeholder="Mesa"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button  onclick="escribefire()" class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
+
+					<div class="text-center p-t-115">
+						<div class="txt1">
+							login  <button onclick="mostrarlogin()">go</button>
+						</div>
+
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+</div>
+	<div id="idlogin">
+		
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Bienvenido logi
+					</span>
+					<span class="login100-form-title p-b-48">
+						<i class="zmdi zmdi-font"></i>
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input id="idloginmovil" class="input100" type="number" name="movil">
+						<span class="focus-input100" data-placeholder="Movil"></span>
+					</div>
+						<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input id="idlogincedula" class="input100" type="password" name="pass">
+						<span class="focus-input100" data-placeholder="cedula"></span>
+					</div>
+
+					
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button onclick="meestoyloegeando()" class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
+
+					<div class="text-center p-t-115">
+						<div class="txt1">
+							Registro  <button onclick="mostrarregistro()">go</button>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	</div>
+	
+	
+	<script src="lee.js"></script>
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+
+
+
+</body>
+</html>
