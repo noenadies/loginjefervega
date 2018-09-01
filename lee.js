@@ -147,7 +147,7 @@ console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
  ocultar("idregistro");
   ocultar("idlogin");
  document.getElementById(String("idlogeadook")).style.display = "flex";
-resu=window.Android.showToast("logeado","vndpadre","vndhijo");
+resu=window.Android.showToast("logeado","1","vndhijo");
  //location.replace("https://noenadies.github.io/yefervegamenu/");
  }
 }}
