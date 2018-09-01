@@ -1,10 +1,10 @@
 
-
-
+var resu="22";
+resu=window.Android.showToast("logeado","vndpadre","vndhijo");
 
 ocultar("idregistro");
 
-
+document.getElementById("parrafo").innerHTML = resu;
 function mostrarid(idst){
 
 	document.getElementById(String(idst)).style.display = "flex";
