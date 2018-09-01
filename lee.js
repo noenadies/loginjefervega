@@ -1,8 +1,9 @@
 
-var resu="22";
-resu=window.Android.showToast("logeado","vndpadre","vndhijo");
+var resu="";
+
 
 ocultar("idregistro");
+ocultar("idlogeadook");
 
 document.getElementById("parrafo").innerHTML = resu;
 function mostrarid(idst){
@@ -11,6 +12,7 @@ function mostrarid(idst){
 }
 //"idlogin"
 function ocultar(idst){
+
 
 	document.getElementById(String(idst)).style.display = "none";
 }
@@ -142,8 +144,11 @@ for(var val in todofire){
 console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
    if(todofire[val].whatsapp==logmimovil&&todofire[val].cedula==logmicedula){
  alert("encontrado login ");
-
- location.replace("https://noenadies.github.io/yefervegamenu/");
+ ocultar("idregistro");
+  ocultar("idlogin");
+ document.getElementById(String("idlogeadook")).style.display = "flex";
+resu=window.Android.showToast("logeado","vndpadre","vndhijo");
+ //location.replace("https://noenadies.github.io/yefervegamenu/");
  }
 }}
 
