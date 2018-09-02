@@ -80,15 +80,11 @@ micedula=	document.getElementById("idcedula").value.toString();
 mideparta=	document.getElementById("iddepartamento").value;
 miemail=	document.getElementById("idemail").value;
 mimovil=	document.getElementById("idmovil").value.toString();
-milocalidad=	document.getElementById("idlocalidad").value;
-mimunicipio=	document.getElementById("idmunicipio").value;
-milugarvoto=	document.getElementById("ididireccion").value;
-mimesa=	document.getElementById("idmesa").value.toString();
-micodigolocal=	document.getElementById("idcodigo").value.toString();
 
-console.log(minombre+" " + micedula +""+
-	mideparta+"  " +miemail+" " +mimovil+"  " +milocalidad +"  "+mimunicipio+"   " +milugarvoto
-	+"  "+mimesa+"  "+micodigolocal);
+mimunicipio=	document.getElementById("idmunicipio").value;
+
+
+
 
 }
 var logmicedula="";
@@ -107,7 +103,7 @@ function nuevochid(stnodo){//nombre1, cedula1, celular1, direccion1 , email1, de
 
         var person = {nombre:minombre,whatsapp:mimovil,
          cedula:micedula,email:miemail,departamento:mideparta,
-         municipio:mimunicipio,direccion:milugarvoto,mesa:mimesa,codigolocal:micodigolocal,localidad:milocalidad}; 
+         municipio:mimunicipio,}; 
       firebase.database().ref().child(String(stnodo)).push(person);
 
 }
