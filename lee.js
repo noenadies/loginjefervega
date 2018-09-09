@@ -139,12 +139,14 @@ function validadcionuser(){
 for(var val in todofire){
 console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
    if(todofire[val].whatsapp==logmimovil&&todofire[val].cedula==logmicedula){
- alert("encontrado login ");
+ 
  ocultar("idregistro");
   ocultar("idlogin");
  document.getElementById(String("idlogeadook")).style.display = "flex";
-resu=window.Android.showToast("logeado","1","vndhijo");
- //location.replace("https://noenadies.github.io/yefervegamenu/");
+//resu=window.Android.showToast("logeado","1","vndhijo");
+ //location.replace("https://noenadies.github.io/yefernoticias/");
+ location.href="https://noenadies.github.io/yefernoticias/";
+ alert("encontrado login ");
  }
 }}
 
@@ -183,7 +185,6 @@ console.log(todofire);
 
 
 }
-
 
 
 
