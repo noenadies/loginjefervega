@@ -116,9 +116,12 @@ function nuevochid(stnodo){//nombre1, cedula1, celular1, direccion1 , email1, de
 
 function escribefire(){
 //nuevochid("user");
+micedula= document.getElementById("idcedula").value.toString();
+existecedula();
+if(!bolexitecedula){
 datosregistro()
 
-nuevochid("user");
+nuevochid("user");}
 }
 
 
@@ -143,15 +146,31 @@ console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
  ocultar("idregistro");
   ocultar("idlogin");
  document.getElementById(String("idlogeadook")).style.display = "flex";
-resu=window.Android.showToast("logeado","1","vndhijo");
+resu=window.Android.showToast("logeado","1",String(todofire[val].cedula));
  //location.replace("https://noenadies.github.io/yefernoticias/");
  location.href="https://noenadies.github.io/yefernoticias/";
  alert("encontrado login ");
  }
 }}
 
+var  bolexitecedula=false;
+function existecedula(){
 
+  for(var val in todofire){
+console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
+   if(todofire[val].cedula==micedula){
+ 
+ocultarregistro();
+ document.getElementById(String("idlogeadook")).style.display = "flex";
+resu=window.Android.showToast("existecedula","0",String(todofire[val].cedula));
+ //location.replace("https://noenadies.github.io/yefernoticias/");
+ //location.href="https://noenadies.github.io/yefernoticias/";
+ //alert("exite cedula "+String(todofire[val].cedula));
+  bolexitecedula=true;
+ }
+}
 
+}
 
 
 var todofire;
