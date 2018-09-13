@@ -103,7 +103,7 @@ function nuevochid(stnodo){//nombre1, cedula1, celular1, direccion1 , email1, de
 
         var person = {nombre:minombre,whatsapp:mimovil,
          cedula:micedula,email:miemail,departamento:mideparta,
-         municipio:mimunicipio,}; 
+         municipio:mimunicipio,activo:"a"}; 
       firebase.database().ref().child(String(stnodo)).push(person);
 
 }
@@ -140,16 +140,19 @@ alert(logmimovil+"   "+logmicedula);
 
 function validadcionuser(){
 for(var val in todofire){
-console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
+
    if(todofire[val].whatsapp==logmimovil&&todofire[val].cedula==logmicedula){
- 
+ if(todofire[val].activo=="a"){
  ocultar("idregistro");
   ocultar("idlogin");
  document.getElementById(String("idlogeadook")).style.display = "flex";
 resu=window.Android.showToast("logeado","1",String(todofire[val].cedula));
  //location.replace("https://noenadies.github.io/yefernoticias/");
- location.href="https://noenadies.github.io/yefernoticias/";
- alert("encontrado login ");
+ location.href="https://noenadies.github.io/yefernoticias/";}
+ else{
+  resu=window.Android.showToast("noactivo","0","No esta activo porque violo la reglas ");
+ }
+
  }
 }}
 
@@ -195,7 +198,7 @@ function unavesmensaje(ref)
     //alert(  snapshot.val());
     todofire=snapshot.val();
 
-console.log(todofire);
+
 
 
  
