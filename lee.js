@@ -162,7 +162,7 @@ console.log(todofire[val].whatsapp  + "  "+ todofire[val].cedula);
  
 ocultarregistro();
  document.getElementById(String("idlogeadook")).style.display = "flex";
-resu=window.Android.showToast("existecedula","0",String(todofire[val].cedula));
+resu=window.Android.showToast("sicedula","0",String(todofire[val].cedula));
  //location.replace("https://noenadies.github.io/yefernoticias/");
  //location.href="https://noenadies.github.io/yefernoticias/";
  //alert("exite cedula "+String(todofire[val].cedula));
