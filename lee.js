@@ -8,36 +8,36 @@ ocultar("idlogeadook");
 document.getElementById("parrafo").innerHTML = resu;
 function mostrarid(idst){
 
-	document.getElementById(String(idst)).style.display = "flex";
+  document.getElementById(String(idst)).style.display = "flex";
 }
 //"idlogin"
 function ocultar(idst){
 
 
-	document.getElementById(String(idst)).style.display = "none";
+  document.getElementById(String(idst)).style.display = "none";
 }
 
 function mostrarregistro(){
 ocultar("idlogin");
-	mostrarid("idregistro");
+  mostrarid("idregistro");
 
 }
 
 function ocultarregistro(){
 ocultar("idregistro");
-	mostrarid("idlogin");
+  mostrarid("idlogin");
 
 }
 
 function mostrarlogin(){
 ocultar("idregistro");
-	mostrarid("idlogin");
-	
+  mostrarid("idlogin");
+  
 }
 
 function ocultarlogin(){
 ocultar("idlogin");
-	mostrarid("idregistro");
+  mostrarid("idregistro");
 
 }
 
@@ -75,13 +75,13 @@ var micodigolocal="";
 function datosregistro(){
 
 
-minombre=	document.getElementById("idnombre").value;
-micedula=	document.getElementById("idcedula").value.toString();
-mideparta=	document.getElementById("iddepartamento").value;
-miemail=	document.getElementById("idemail").value;
-mimovil=	document.getElementById("idmovil").value.toString();
+minombre= document.getElementById("idnombre").value;
+micedula= document.getElementById("idcedula").value.toString();
+mideparta=  document.getElementById("iddepartamento").value;
+miemail=  document.getElementById("idemail").value;
+mimovil=  document.getElementById("idmovil").value.toString();
 
-mimunicipio=	document.getElementById("idmunicipio").value;
+mimunicipio=  document.getElementById("idmunicipio").value;
 
 
 
@@ -91,8 +91,8 @@ var logmicedula="";
 var logmimovil="";
 function logindatos(){
 
-	logmicedula=	document.getElementById("idlogincedula").value.toString();
-	logmimovil=	document.getElementById("idloginmovil").value.toString();
+  logmicedula=  document.getElementById("idlogincedula").value.toString();
+  logmimovil= document.getElementById("idloginmovil").value.toString();
 }
 
 
@@ -148,7 +148,7 @@ for(var val in todofire){
  document.getElementById(String("idlogeadook")).style.display = "flex";
 resu=window.Android.showToast("logeado","1",String(todofire[val].cedula));
  //location.replace("https://noenadies.github.io/yefernoticias/");
- location.href="https://noenadies.github.io/yefernoticias/";}
+ location.href="http://yefervega.com.co/index.php/component/spsimpleportfolio/item/8-como-se-manifiesta-la-violencia-de-genero";}
  else{
   resu=window.Android.showToast("noactivo","0","No esta activo porque violo la reglas ");
  }
